@@ -3,5 +3,5 @@ pandas==2.2.2
 plotly==5.24.1
 pip==22.0.4
 setuptools==58.1.0
-dotenv==1.0.0
+dotenv==1.0.1
 openai==1.56.2
