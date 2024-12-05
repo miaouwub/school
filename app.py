@@ -1,12 +1,18 @@
-import streamlit as st 
+import streamlit as st
 import plotly.graph_objects as go
-
 import pandas as pd
+import time
+import dotenv
+import os
+
+#----------------------------------------------------------------
+
+
 
 st.title('你知道伯婆嗎?')
 with st.sidebar:
     choice = st.selectbox(
-        "選擇操作", ['圖表.1','第一章'])
+        "選擇操作", ['圖表.1','第一章','GPT'])
         
 if choice=='圖表.1':
     st.write('## 桃園區廟宇登記數量分析')
@@ -15,7 +21,7 @@ if choice=='圖表.1':
         st.write('### 桃園市各廟宇主祀神祇比例')
 
         # 從 API 讀取 JSON 數據
-        data = pd.read_json('http://data.tycg.gov.tw/api/v1/rest/datastore/b2247404-3d92-4829-9855-0cd5e71b92b3?format=json&limit=500')
+        data = pd.read_json('https://od.moi.gov.tw/api/v1/rest/datastore/301000000A-001534-002')
         df = pd.DataFrame(data['result']['records'])
 
         # 計算各主祀神祇的數量和比例
@@ -73,5 +79,37 @@ if choice=='第一章':
     st.write('##### 4.沒老師教')
     st.write('##### 5.只能看影片')
 
+if choice=='GPT':
+    dotenv.load_dotenv()
+    api_key = os.getenv("OPENAI_KEY")
+    user_input = st.text_input("輸入對話:")    
+    # 當使用者點擊 "送出" 按鈕時觸發
+    if st.button("送出"):
+        # 顯示用戶訊息
+        with st.chat_message("user"):
+            st.write(user_input)
+        # 設定聊天區域，用於顯示 GPT 回應
+        with st.chat_message("assistant"):
+            output_placeholder = st.empty()
+            # 創建 OpenAI 客戶端
+            from openai import OpenAI
+            client = OpenAI(api_key=api_key)
+            # 呼叫 OpenAI API 並啟用串流模式
+            stream = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[{"role": "user", "content": user_input}],
+                stream=True,
+            )
+            # 逐步顯示 GPT 回應
+            full_response = ""
+            for chunk in stream:
+                if chunk.choices[0].delta.content:
+                    content = chunk.choices[0].delta.content
+                    full_response += content
+                    output_placeholder.markdown(full_response)
 
-    
+                    stream = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[{"role": "user", "content": user_input}],
+                    stream=True,
+                )
