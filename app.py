@@ -14,50 +14,7 @@ with st.sidebar:
     choice = st.selectbox(
         "選擇操作", ['圖表.1','第一章','GPT'])
         
-if choice=='圖表.1':
-    st.write('## 桃園區廟宇登記數量分析')
-    col_rowC_1, col_rowC_2 = st.columns((5,5))
-    with col_rowC_1:
-        st.write('### 桃園市各廟宇主祀神祇比例')
-
-        # 從 API 讀取 JSON 數據
-        data = pd.read_json('https://od.moi.gov.tw/api/v1/rest/datastore/301000000A-001534-002')
-        df = pd.DataFrame(data['result']['records'])
-
-        # 計算各主祀神祇的數量和比例
-        df_count = df['主祀神祇'].value_counts(normalize=True)
-        df_count_ratio = df_count / df_count.sum()
-        # 計算 "其他" 的比例
-        df_count_ratio['其他'] = df_count_ratio[df_count_ratio < 0.03].sum()
-
-        # 保留比例大於等於 3% 的項目，並包含 "其他"
-        df_count_ratio = df_count_ratio[df_count_ratio >= 0.03]
-        # 在 Streamlit sidebar 中創建多選篩選
-        # 轉換為純字串列表
-        st.sidebar.subheader('比例-選擇主祀神祇')
-        options_list = df_count_ratio.index.astype(str).tolist()
-        selected_labels = st.sidebar.multiselect(
-            '選擇主祀神祇',
-            options=options_list,
-            default=options_list  # 預設顯示全部
-        )
-    
-
-        # 根據選擇篩選數據
-        filtered_data = df_count_ratio[selected_labels]
-
-        # 使用 Plotly 繪製互動式圓餅圖
-        fig = go.Figure(
-            go.Pie(
-                labels=filtered_data.index,
-                values=filtered_data,
-                hole=0.3,  # 设置为甜甜圈图表
-                textinfo='percent+label'  # 显示百分比和标签
-            )
-        )
-
-        # 在 Streamlit 中顯示圖表
-        st.plotly_chart(fig)
+#圖表
 
 if choice=='第一章':
     st.title('第一章')
