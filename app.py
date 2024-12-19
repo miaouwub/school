@@ -15,6 +15,9 @@ with st.sidebar:
         "選擇操作", ['圖表.1','第一章','GPT'])
         
 #圖表
+if choice=='圖表.1':
+    st.image('https://www.notion.so/97465c7c17354d3a88ad22416814bbe1?pvs=4#122538fda493801599d2c26265b58b92')
+
 
 if choice=='第一章':
     st.title('第一章')
