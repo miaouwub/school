@@ -16,7 +16,7 @@ with st.sidebar:
         
 #圖表
 if choice=='圖表.1':
-    st.image('https://discord.com/login?redirect_to=%2Fchannels%2F1288422351868006472%2F1288442630211895309%2F1319183143978143796')
+    st.image('https://drive.google.com/file/d/1AaN8wFpuxBA4TgPgpQLePa5L6dhTLuKw/view?usp=drive_link')
 
 
 if choice=='第一章':
