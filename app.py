@@ -16,7 +16,8 @@ with st.sidebar:
         
 #圖表
 if choice=='圖表.1':
-    st.image('https://pbs.twimg.com/media/GfEsEFTbAAAkIJI.jpg')
+    st.image('https://pbs.twimg.com/media/GfI_wgIaoAANz64.jpg')
+    st.image('https://pbs.twimg.com/media/GfI_wgIa4AA_OaW.jpg')
 
 
 if choice=='第一章':
