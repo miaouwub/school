@@ -12,7 +12,7 @@ import os
 
 with st.sidebar:
     choice = st.selectbox(
-        "menu", ['圖表','文書第一章','GPT'])
+        "MENU", ['圖表','文書第一章','GPT'])
         
 #圖表
 if choice=='圖表':
