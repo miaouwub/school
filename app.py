@@ -12,15 +12,15 @@ import os
 
 with st.sidebar:
     choice = st.selectbox(
-        "選擇操作", ['圖表.1','第一章','GPT'])
+        "menu", ['圖表','文書第一章','GPT'])
         
 #圖表
-if choice=='圖表.1':
+if choice=='圖表':
     st.image('https://pbs.twimg.com/media/GfI_wgIaoAANz64.jpg')
     st.image('https://pbs.twimg.com/media/GfI_wgIa4AA_OaW.jpg')
 
 
-if choice=='第一章':
+if choice=='文書第一章':
     st.title('第一章')
     st.write('## 壹、前言')
     st.write('##### 土地婆在台灣民間信仰中是一位重要的女神，與土地公相輔相成， 她被信徒視為賜福的象徵，能夠帶來富貴與幸福，台灣各地都有土地公廟，但是有土地婆的廟卻寥寥無幾，大部分集中在桃園市，究竟為什麼土地婆的信仰人數如此稀少呢？是因為土地公仁民愛物而深得民心，相對土地婆因擔心土地公變成爛好人而阻擋土地公有求必應的做法，被部分信眾所討厭。')
