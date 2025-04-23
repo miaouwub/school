@@ -19,6 +19,7 @@ if choice=='圖表':
     st.write('# 桃園市各廟宇主祀神祇比例')
     st.image('https://pbs.twimg.com/media/GfI_wgIaoAANz64.jpg')
     st.image('https://pbs.twimg.com/media/GfI_wgIa4AA_OaW.jpg')
+    st.image('https://pbs.twimg.com/media/GpMG0cua4AE4etz.jpg')
 
 
 if choice=='文書第一章':
