@@ -20,6 +20,12 @@ if choice=='圖表':
     st.image('https://pbs.twimg.com/media/GfI_wgIaoAANz64.jpg')
     st.image('https://pbs.twimg.com/media/GfI_wgIa4AA_OaW.jpg')
     st.image('https://pbs.twimg.com/media/GpMG0cua4AE4etz.jpg')
+    st.write('1.屏東車城 - 福安宮 台灣最大土地公廟')
+    st.write('2.屏東車城 - 福安宮 台灣最大土地公廟')
+    st.write('3.屏東車城 - 福安宮 台灣最大土地公廟')
+    st.write('4.屏東車城 - 福安宮 台灣最大土地公廟')
+    st.write('5.屏東車城 - 福安宮 台灣最大土地公廟')
+
 
 
 if choice=='文書第一章':
