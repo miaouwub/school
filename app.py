@@ -34,8 +34,8 @@ if choice=='前言':
 #圖表
 if choice=='圖表':
     st.write('# 桃園市各廟宇主祀神祇比例')
-    st.write('以下是從桃園市資料開放平台蒐集的.json資料，並用pyplot分析過的長條圖')
-    st.write('其中顯示出了福德正神是桃園主祀神祇占比最多的神祇。')
+    st.write('##### 以下是從桃園市資料開放平台蒐集的.json資料，並用pyplot分析過的長條圖')
+    st.write('##### 其中顯示出了福德正神是桃園主祀神祇占比最多的神祇。')
     st.image('https://i.ibb.co/F4bh2Jbx/Figure-1.png')
     st.image('https://pbs.twimg.com/media/GfI_wgIaoAANz64.jpg')
     st.image('https://pbs.twimg.com/media/GfI_wgIa4AA_OaW.jpg')
