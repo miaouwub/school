@@ -12,8 +12,15 @@ import os
 
 with st.sidebar:
     choice = st.selectbox(
-        "MENU", ['圖表','文書第一章','GPT'])
-        
+        "MENU", ['前言','圖表','文書第一章','GPT'])
+
+
+if choice=='前言':
+    st.write('#研究動機')
+    st.write('由報導指出，土地婆在一般民眾心中，不甚討好，然在桃園仍有近1/3的廟宇供奉著土地婆。因此本組希望藉由遊戲與介紹來推廣伯婆文化，同時也希望，無論是現實生活或是文化上，消除對女性的各種形式的歧視。')
+    st.write('')
+    st.write('')
+    
 #圖表
 if choice=='圖表':
     st.write('# 桃園市各廟宇主祀神祇比例')
