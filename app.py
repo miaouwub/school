@@ -40,6 +40,7 @@ if choice=='圖表':
     st.image('https://pbs.twimg.com/media/GfI_wgIaoAANz64.jpg')
     st.image('https://pbs.twimg.com/media/GfI_wgIa4AA_OaW.jpg')
     st.image('https://pbs.twimg.com/media/GpMG0cua4AE4etz.jpg')
+    st.write('上圖為台灣五大公廟')
     st.write('1.屏東車城 - 福安宮 台灣最大土地公廟')
     st.write('2.新北中和 - 南山福德宮 北台灣土地公信仰中心')
     st.write('3.宜蘭四結 - 福德廟 台灣最大金身土地公')
