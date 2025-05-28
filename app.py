@@ -15,15 +15,15 @@ with st.sidebar:
         "MENU", ['前言','圖表','遊戲','文書第一章','GPT'])
 
 if choice=='遊戲':
-    st.image('https://i.ibb.co/G3kdkwL1/22.jpg')
-    st.image('https://i.ibb.co/8LD9XNBJ/23.jpg')
-    st.image('https://i.ibb.co/xqyBkQMB/24.jpg')
-    st.image('https://i.ibb.co/YBMr8SfP/25.jpg')
-    st.image('https://i.ibb.co/KpkXFzjr/26.jpg')
-    st.image('https://i.ibb.co/FbtgkspG/27.jpg')
-    st.image('https://i.ibb.co/fzbyb8Cs/28.jpg')
-    st.image('https://i.ibb.co/vCNGnk3f/29.jpg')
-    st.image('https://i.ibb.co/KjfY4gM1/30.jpg')
+    st.image('https://i.ibb.co/HjfYMN5/22.jpg')
+    st.image('https://i.ibb.co/sJPZMsxT/23.jpg')
+    st.image('https://i.ibb.co/21byC45L/24.jpg')
+    st.image('https://i.ibb.co/8gYrbzvB/25.jpg')
+    st.image('https://i.ibb.co/qYQcLBb3/26.jpg')
+    st.image('https://i.ibb.co/PZc2hgps/27.jpg')
+    st.image('https://i.ibb.co/Txc64Q7y/28.jpg')
+    st.image('https://i.ibb.co/hF86WNXG/29.jpg')
+    st.image('https://i.ibb.co/9mtK8NbL/30.jpg')
     st.video('https://youtu.be/PkVSpu131_8')
     
 
