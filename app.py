@@ -12,10 +12,22 @@ import os
 
 with st.sidebar:
     choice = st.selectbox(
-        "MENU", ['首頁','前言','圖表','文書第一章','GPT'])
+        "MENU", ['前言','圖表','遊戲','文書第一章','GPT'])
 
-if choice=='首頁':
-    st.image('https://i.ibb.co/hRRc84jB/Momof-Land.jpg')
+if choice=='遊戲':
+    st.image('https://i.ibb.co/G3kdkwL1/22.jpg')
+    st.image('https://i.ibb.co/8LD9XNBJ/23.jpg')
+    st.image('https://i.ibb.co/xqyBkQMB/24.jpg')
+    st.image('https://i.ibb.co/YBMr8SfP/25.jpg')
+    st.image('https://i.ibb.co/KpkXFzjr/26.jpg')
+    st.image('https://i.ibb.co/FbtgkspG/27.jpg')
+    st.image('https://i.ibb.co/fzbyb8Cs/28.jpg')
+    st.image('https://i.ibb.co/vCNGnk3f/29.jpg')
+    st.image('https://i.ibb.co/KjfY4gM1/30.jpg')
+    st.image('')
+    st.image('')
+    st.image('')
+    st.image('')
 
 
 if choice=='前言':
