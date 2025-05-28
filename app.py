@@ -14,7 +14,7 @@ with st.sidebar:
     choice = st.selectbox(
         "MENU", ['首頁','前言','圖表','遊戲','文書第一章','GPT'])
 if choice=='首頁':
-    st.image('https://i.ibb.co/HjfYMN5/22.jpg', use_column_width=True)
+    st.image('https://i.ibb.co/Y77Xj1Mc/Momof-Land.jpg', use_column_width=True)
 
 
     
