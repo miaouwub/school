@@ -24,10 +24,7 @@ if choice=='遊戲':
     st.image('https://i.ibb.co/fzbyb8Cs/28.jpg')
     st.image('https://i.ibb.co/vCNGnk3f/29.jpg')
     st.image('https://i.ibb.co/KjfY4gM1/30.jpg')
-    st.image('')
-    st.image('')
-    st.image('')
-    st.image('')
+    
 
 
 if choice=='前言':
