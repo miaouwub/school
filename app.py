@@ -20,14 +20,14 @@ if choice=='首頁':
     
 if choice=='遊戲':
     st.image('https://i.ibb.co/HjfYMN5/22.jpg')
-    st.image('https://i.ibb.co/sJPZMsxT/23.jpg')
+    st.image('https://i.ibb.co/Xx76xvZW/23.jpg')
     st.image('https://i.ibb.co/21byC45L/24.jpg')
     st.image('https://i.ibb.co/8gYrbzvB/25.jpg')
-    st.image('https://i.ibb.co/qYQcLBb3/26.jpg')
+    st.image('https://i.ibb.co/S43qyXj6/26.jpg')
     st.image('https://i.ibb.co/PZc2hgps/27.jpg')
-    st.image('https://i.ibb.co/Txc64Q7y/28.jpg')
+    st.image('https://i.ibb.co/zhq55fPZ/28.jpg')
     st.image('https://i.ibb.co/hF86WNXG/29.jpg')
-    st.image('https://i.ibb.co/9mtK8NbL/30.jpg')
+    st.image('https://i.ibb.co/R4V3ZQ6V/30.jpg')
     st.video('https://youtu.be/PkVSpu131_8')
     
 
